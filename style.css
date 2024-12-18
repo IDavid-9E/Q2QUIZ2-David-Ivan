@@ -1,0 +1,47 @@
+   body {
+            background-color: #247BA0; /* Background */
+            color: #FFF;
+            font-family: Arial, sans-serif;
+            background-image: url(bluebackground.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: #041924;
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            color: #FFF;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #FFF;
+            margin-right: 15px;
+        }
+
+        .form-container {
+            background-color: #041924;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #FFF;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .btn-submit {
+            display: block;
+            margin: auto
+   ;     }

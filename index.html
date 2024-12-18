@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club Registration Form</title>
+
+    <!-- Bootstrap Setup -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- Link to JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar (Header) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Robotics Club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Robot Models</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-container">
+                    <h1>Robotics Club Registration Form</h1>
+                    <form>
+                        <!-- Name and Age -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="age" class="form-label">Age</label>
+                                <input type="number" id="age" class="form-control" placeholder="Age">
+                            </div>
+                        </div>
+
+                        <!-- Email and Phone -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" id="phone" class="form-control" placeholder="Phone Number">
+                            </div>
+                        </div>
+
+                        <!-- Robotics Topics -->
+                        <div class="mb-3">
+                            <label class="form-label">Preferred Robotics Topics</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="programming" value="programming">
+                                    <label class="form-check-label" for="programming">Programming</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="electronics" value="electronics">
+                                    <label class="form-check-label" for="electronics">Electronics</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="mechanical" value="mechanical">
+                                    <label class="form-check-label" for="mechanical">Mechanical Design</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Level -->
+                        <div class="mb-3">
+                            <label class="form-label">Robotics Experience Level</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="experience" id="beginner" value="beginner">
+                                    <label class="form-check-label" for="beginner">Beginner</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="experience" id="intermediate" value="intermediate">
+                                    <label class="form-check-label" for="intermediate">Intermediate</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="experience" id="advanced" value="advanced">
+                                    <label class="form-check-label" for="advanced">Advanced</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Preferred Project -->
+                        <div class="mb-3">
+                            <label for="project" class="form-label">Preferred Robotics Project</label>
+                            <select id="project" class="form-select">
+                                <option selected>Choose a project...</option>
+                                <option value="robot_arm">Robotic Arm</option>
+                                <option value="line_follower">Line Follower Robot</option>
+                                <option value="drone">Drone</option>
+                            </select>
+                        </div>
+
+                        <!-- Statement of Interest -->
+                        <div class="mb-3">
+                            <label for="interest" class="form-label">Statement of Interest</label>
+                            <textarea id="interest" rows="4" class="form-control" placeholder="Write your interests here..."></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
